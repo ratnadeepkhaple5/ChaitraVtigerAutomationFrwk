@@ -68,7 +68,7 @@ public class WebDriverUtility {
 	}
 	
 	/**
-	 * this method is a custom wait where it will wait for the particular element
+	 * this method is a 'Custom wait' where it will wait for the particular element
 	 * @param element
 	 * @throws InterruptedException
 	 */
@@ -89,9 +89,8 @@ public class WebDriverUtility {
 			}
 		}
 	}
-	
 	/**
-	 * This method will handle drop down using select class based on index
+	 * This method will handle drop down using select class based on "index"
 	 * @param element
 	 * @param index
 	 */
@@ -100,9 +99,8 @@ public class WebDriverUtility {
 		Select s = new Select(element);
 		s.selectByIndex(index);
 	}
-	
 	/**
-	 * This method will handle drop down using select class based on visible text
+	 * This method will handle drop down using select class based on "visible text"
 	 * @param element
 	 * @param visibleText
 	 */
@@ -113,7 +111,7 @@ public class WebDriverUtility {
 	}
 	
 	/**
-	 * This method will handle drop down using select class based on value
+	 * This method will handle drop down using select class based on "value"
 	 * @param value
 	 * @param element
 	 */
@@ -271,6 +269,7 @@ public class WebDriverUtility {
 	
 	/**
 	 * This method will come out of all the frames
+	 * to come back to main parent frame
 	 * @param driver
 	 */
 	public void toDefaultWindow(WebDriver driver)
@@ -304,8 +303,7 @@ public class WebDriverUtility {
 				break;
 			}
 		}
-	}
-	
+	}	
 	/**
 	 * this method will take screen shot and save in screenshots folder
 	 * @param driver
@@ -347,17 +345,5 @@ public class WebDriverUtility {
 		int y = element.getLocation().getY();
 		js.executeScript("window.scrollBy(0,"+y+")", element);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

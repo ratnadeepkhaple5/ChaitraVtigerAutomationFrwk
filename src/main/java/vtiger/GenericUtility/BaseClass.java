@@ -75,8 +75,6 @@ public class BaseClass {
 		driver.get(URL);
 		sDriver=driver;
 	}
-	
-	
 	@BeforeMethod(groups = {"SmokeSuite","RegressionSuite"})
 	public void bmConfig() throws IOException
 	{

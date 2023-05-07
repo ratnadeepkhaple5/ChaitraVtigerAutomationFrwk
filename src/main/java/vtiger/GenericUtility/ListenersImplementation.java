@@ -71,10 +71,7 @@ public class ListenersImplementation implements ITestListener{
 		
 		//Reporter.log(methodName+" -> is failed", true);
 		//Reporter.log(result.getThrowable().toString()+" -> reason for failure", true);
-		
-		
-		
-		
+	
 	}
 
 	public void onTestSkipped(ITestResult result) {
